@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 @app.route("/returnjson", methods=['POST','GET']) 
 
-# http://192.168.15.86:8080/returnjson?init_date=2022-01-01&end_date=2022-01-30&freq_time=1h&index=Close&tickers=SPY&tickers=AAPL&tickers=MMM
+# http://127.0.0.1:8080/returnjson?init_date=2022-01-01&end_date=2022-01-30&freq_time=1h&index=Close&tickers=SPY&tickers=AAPL&tickers=MMM
 
 def ticker() -> "matriz de correlação":
     

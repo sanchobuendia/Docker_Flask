@@ -26,7 +26,6 @@ def ticker() -> "matriz de correlação":
     index = request.args.get('index')         # 'Adj Close','Close', 'High', 'Open'
 
     df = yf.download(tickers, interval = str(freq_time), start=str(init_date), end= str(end_date)) 
-    #df = yf.download("SPY AAPL MMM AOS", interval = '1h', start="2022-01-01", end="2022-01-30")
     df = df.reset_index()
     corr = df[str(index)]
     corr = corr.corr()
