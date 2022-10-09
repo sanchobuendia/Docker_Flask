@@ -42,14 +42,14 @@ http://127.0.0.1:8080/returnjson?init_date=2022-01-01&end_date=2022-01-30&freq_t
 
 the url has fixed parts, such as:
 
-http://127.0.0.1:8080/returnjson?init_date=
+**http://127.0.0.1:8080/returnjson?init_date=**
 
-&end_date=
+**&end_date=**
 
-&freq_time=
+**&freq_time=**
 
-&index=
+**&index=**
 
-&tickers=
+**&tickers=**
 
 the user needs to choose the parameter values.
