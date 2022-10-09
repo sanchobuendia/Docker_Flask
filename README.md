@@ -2,19 +2,10 @@
 
 This tutorial show as create a flask api, put it in container and deploy on GCP.
 
-Firt of all, it is strongly recommended to create a virtual environment. I use MacOS and to crate the virtual environment you can follow tha next staeps 
+Firt of all, I am using poetry here. To install dependencies
 
-create a new folder
+poetry install
 
-mkdir docker_flask_venv
-
-inside the docker_flask_venv folder
-
-virtualenv venv
-
-and active the virtual environment 
-
-source venv/bin/activate
 
 ## Flask api
 The api.py file is a flask script that makes a request on yahoo finance. In the request on Yahoo Finance you set three parameters:
@@ -32,7 +23,7 @@ The api return a json with the correlation values among the selected stocks.
 
 To run the api script locally it is recommended to use a virtual environment as explained earlier. when the environment is active go to the application folder and run.
 
-python api.py
+poetry run python api.py
 
 ![image](/images/terminal1.png)
 
