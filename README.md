@@ -26,4 +26,6 @@ The api.py file is a flask script that makes a request on yahoo finance. In the 
 
 yf.download(tickers, interval = str(freq_time), start=str(init_date), end= str(end_date)) 
 
-The api return a json with the correlation values among the 
+The api return a json with the correlation values among the selected stocks.
+
+
