@@ -29,3 +29,27 @@ yf.download(tickers, interval = str(freq_time), start=str(init_date), end= str(e
 The api return a json with the correlation values among the selected stocks.
 
 ![image](/images/docker_flask_json.png)
+
+To run the api script locally it is recommended to use a virtual environment as explained earlier. when the environment is active go to the application folder and run.
+
+python api.py
+
+![image](/images/terminal1.png)
+
+To make a request in the api it is necessary to open a browser and enter with an url like this
+
+http://127.0.0.1:8080/returnjson?init_date=2022-01-01&end_date=2022-01-30&freq_time=1h&index=Close&tickers=SPY&tickers=AAPL&tickers=MMM
+
+the url has fixed parts, such as:
+
+http://127.0.0.1:8080/returnjson?init_date=
+
+&end_date=
+
+&freq_time=
+
+&index=
+
+&tickers=
+
+the user needs to choose the parameter values.
