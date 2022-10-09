@@ -28,4 +28,4 @@ yf.download(tickers, interval = str(freq_time), start=str(init_date), end= str(e
 
 The api return a json with the correlation values among the selected stocks.
 
-
+![image](/images/docker_flask_json.png)
